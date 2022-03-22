@@ -9,3 +9,15 @@ nav {
     height: 40px;
     margin-top: 5px;
 }
+
+.hero-img{
+    display: block;
+    margin: 20px auto ;
+}
+
+.hero-content{
+    font-family:Poppins;
+    margin-left: 30px;
+    
+
+}
