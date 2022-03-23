@@ -1,20 +1,27 @@
-import NavBar from "./NavBar"
-import Hero from "./Hero"
-import Card from "./Card"
+import NavBar from "./NavBar";
+import Hero from "./Hero";
+import Card from "./Card";
+import Data from "./Data";
 
-export default function Main():JSX.Element{
-    return(
-        <>
-        <NavBar/>
-        <Hero/>
-        <div>
-            <Card image="images/swimmer.png"
-            rating = "5.0"
-            description = "Life lessons with Katie Zaferes"
-            price = "$50"
-            reviews = {6}
-            />
-        </div>
-        </>
-    )
+const eachCard = Data.map((value) => (
+  <Card
+    key={value.id}
+    image={value.coverImg}
+    rating={value.stats.rating}
+    description={value.title}
+    price={value.price}
+    reviews={value.stats.reviewCount}
+  />
+));
+
+export default function Main(): JSX.Element {
+  return (
+    <>
+      <NavBar />
+      <Hero />
+      <div>
+          {eachCard}
+      </div>
+    </>
+  );
 }
