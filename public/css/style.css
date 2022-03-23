@@ -27,7 +27,9 @@ nav {
 }
 
 .each-card{
+    margin-top: 15px;
     margin-left: 30px;
+    display: inline-block;
 }
 
 .card-info{
@@ -37,7 +39,12 @@ nav {
     max-height: 10px
 }
 
+.card-images{
+    height: 300px;
+}
+
 .star{
     height: 15px;
     margin-right: 5px;
 }
+

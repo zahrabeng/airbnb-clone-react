@@ -11,6 +11,7 @@ const eachCard = Data.map((value) => (
     description={value.title}
     price={value.price}
     reviews={value.stats.reviewCount}
+    location = {value.location}
   />
 ));
 
