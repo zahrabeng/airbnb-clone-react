@@ -6,13 +6,7 @@ import Data from "./Data";
 const eachCard = Data.map((value) => (
   <Card
     key={value.id}
-    image={value.coverImg}
-    rating={value.stats.rating}
-    description={value.title}
-    price={value.price}
-    reviews={value.stats.reviewCount}
-    location = {value.location}
-    openSpots = {value.openSpots}
+    item={value}
   />
 ));
 
