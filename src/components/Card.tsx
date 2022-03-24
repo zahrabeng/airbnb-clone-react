@@ -8,10 +8,12 @@ interface CardsInterface {
   openSpots:number;
 }
 
+
+
 export default function Card(props: CardsInterface): JSX.Element {
   return (
     <div className="each-card">
-    <div className="sold-out">SOLD OUT</div>
+    {props.openSpots === 0 && <div className="sold-out">SOLD OUT</div>}
       <img className ="card-images" src={props.image} alt="someone swimming" />
 
       <span className="card-info">
